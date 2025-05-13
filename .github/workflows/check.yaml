@@ -73,6 +73,9 @@ jobs:
         run: |
           moon version --all
 
+      - name: moon build --target native  --dry-run 
+        run: moon build --target native  --dry-run 
+
       - name: install module dependencies
         run: |
           moon update
